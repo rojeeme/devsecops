@@ -48,18 +48,22 @@
         footer p {
             color: #777;
             font-size: 14px;
+            max-width: 300px; /* Limit the text width */
+            margin: 0 auto; /* Center the text */
         }
 
         .footer-menu {
             display: flex;
+            flex-wrap: wrap; /* Allow items to wrap into new lines */
             justify-content: center;
             flex-grow: 1;
         }
 
         .footer-menu a {
-            margin: 0 10px;
+            margin: 5px;
             color: #007bff;
             text-decoration: none;
+            display: block; /* Make each item take full width and start on a new line */
         }
 
         .footer-menu a:hover {
@@ -100,7 +104,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p><strong>What is DevSecOps?</strong> DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process.</p>
+            <p><strong>What is DevSecOps?</strong><br>DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process.</p>
         </div>
         <div class="footer-menu">
             <a href="#home">Home</a>
