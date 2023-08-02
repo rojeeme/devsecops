@@ -40,6 +40,9 @@
             bottom: 0; /* Set it at the bottom of the page */
             left: 0; /* Align the footer to the left */
             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow at the bottom */
+            display: flex;
+            justify-content: space-between; /* Space the content evenly */
+            align-items: center; /* Align content vertically */
         }
 
         footer p {
@@ -47,12 +50,19 @@
             font-size: 14px;
         }
 
-        .social-icons a {
-            color: #007bff;
-            transition: color 0.3s;
+        .footer-menu {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
         }
 
-        .social-icons a:hover {
+        .footer-menu a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer-menu a:hover {
             color: #0056b3;
         }
     </style>
@@ -87,20 +97,19 @@
         <p>Feel free to explore more about DevSecOps on GitHub!</p>
     </div>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons mt-4">
-        <a href="https://linkedin.com/in/rojeeme" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/rojeeme" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-    </div>
-
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p><strong>What is DevSecOps?</strong> DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process. Connect with us on social media!</p>
-            <div class="social-icons mt-3">
-                <a href="https://linkedin.com/in/rojeeme" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/rojeeme" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            </div>
+            <p><strong>What is DevSecOps?</strong> DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process.</p>
+        </div>
+        <div class="footer-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/rojeeme" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/rojeeme" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
 
