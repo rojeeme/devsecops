@@ -34,11 +34,26 @@
         /* Custom CSS for the footer */
         footer {
             background-color: #f8f9fa;
-            padding: 20px 0;
+            padding: 30px 0;
             position: absolute; /* Position the footer at the bottom */
             width: 100%; /* Take the full width of the viewport */
             bottom: 0; /* Set it at the bottom of the page */
             left: 0; /* Align the footer to the left */
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow at the bottom */
+        }
+
+        footer p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
@@ -72,11 +87,17 @@
         <p>Feel free to explore more about DevSecOps on GitHub!</p>
     </div>
 
+    <!-- Social Media Icons -->
+    <div class="social-icons mt-4">
+        <a href="https://linkedin.com/in/rojeeme" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/rojeeme" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process. Connect with us on social media!</p>
-            <div class="social-icons">
+            <p><strong>What is DevSecOps?</strong> DevSecOps is a combination of Development, Security, and Operations, aiming to integrate security into the software development process. Connect with us on social media!</p>
+            <div class="social-icons mt-3">
                 <a href="https://linkedin.com/in/rojeeme" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://twitter.com/rojeeme" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
